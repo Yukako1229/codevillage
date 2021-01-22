@@ -1,0 +1,76 @@
+.access{
+    background-color: #A193861F;
+}
+.inner-access-top{
+    width: 84%;
+    padding-top: 256px;
+    margin: 0 auto;
+    @include tab{
+        padding-top: 60px;
+        width: 89%;
+    }
+}
+
+.inner-access-bottom{
+    width: 84%;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    @include tab{
+        padding-bottom: 60px;
+        width: 89%;
+    }
+}
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include tab{
+        flex-direction: column-reverse;
+    }
+
+    &__img{
+        width: 60%;
+        @include tab{
+            width: 100%;
+        }
+        iframe {
+            height: 400px;
+            width: 100%;
+            @include tab{
+             height: 230px;   
+            }
+        }
+    }
+}
+.map__text{
+    width: 40%;
+    background-color: #D0C5BA;
+    font-size: 1.6rem;
+    padding: 100px 0px 100px 100px;
+    font-family: Roboto Mono for Powerline;
+    
+    @include tab{
+        width:100%;
+        padding: 30px 0 60px 20px;
+
+    }
+
+    &__title{
+        color: #707070;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    &__text {
+        color: white;
+        font-size: 1.6rem;
+        padding-top: 24px;
+
+        :nth-child(1) {
+            padding-top: 30px;
+        }
+
+
+    }
+    
+}
+

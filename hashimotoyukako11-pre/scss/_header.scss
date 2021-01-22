@@ -1,0 +1,93 @@
+/*---------
+header
+-----------*/
+
+.logo {
+    font-size: 3.8rem;
+    font-family: Roboto Mono for Powerline, Regular, serif;
+    @include tab{
+        font-size: 2.4rem;
+    }
+}
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    padding: 68px 77px;
+
+
+
+    @include tab{
+        justify-content: space-between;
+        position: static;
+        padding: 24px 20px;
+    }
+
+}
+.pc-nav {
+    ul{
+        
+        li{
+            display: inline-block;
+            color: $gray;
+            margin-left: 20px;
+            font-size: 1.8rem;
+            line-height: 3.8rem;
+
+            & :hover{
+                color : $menu-active;
+    border-bottom :solid 1px $menu-active;
+
+            }
+        }
+    }
+    @include tab{
+        display: none;
+    }
+}
+.sp-nav{
+    background-color: #fff;
+    display: none;
+    
+    ul{
+        
+        li{
+            display: block;
+            color: $gray;
+            width: 20%;
+            margin: 10px 10px 10px auto;
+            font-size: 1.8rem;
+            line-height: 3.8rem;
+
+            & :hover{
+                color : $menu-active;
+    border-bottom :solid 1px $menu-active;
+
+            }
+}
+    }
+}
+
+.hum{
+    display: none;
+    @include tab{
+
+        display: flex;
+        flex-direction: column;
+        &__long{
+            display: inline-block;
+            border-top :solid 1px black;
+            width: 16px;
+            padding-top: 10px;
+    
+            
+        }
+        &__short{
+            display: inline-block;
+            border-top :solid 1px black;
+            width: 14px;
+            
+        }
+    }
+}

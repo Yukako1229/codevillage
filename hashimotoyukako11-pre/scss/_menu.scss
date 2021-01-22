@@ -1,0 +1,49 @@
+.menu__contents{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include sp{
+        flex-direction: column;
+    }
+}
+
+.menu__content {
+    width: 26%;
+    min-width: 275px;
+    position: relative;
+
+    @include tab{
+        justify-content: space-around;
+        margin-bottom: 63px;
+    }
+    @include sp{
+        width: 100%;
+    }
+
+    &__img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        font-family: Roboto Mono for Powerline, Regular, sans-serif;
+        padding-top: 37px;
+        text-align: center;
+    
+    }
+    
+    &__text{
+        padding :34px 10px 52px 10px;
+        font-size: 1.6rem;
+    }
+}
+.price{
+    position: absolute;
+    bottom :0;
+    right : 10px;
+    font-size: 1.6rem;
+}
+
