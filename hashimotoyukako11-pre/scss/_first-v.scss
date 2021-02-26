@@ -9,6 +9,15 @@
     height: 10%;
     color: white;
     z-index: 20;
+
+    @include sp{
+        width: 30%;
+        left: 50%;
+        right: auto;
+        
+        transform: translate(0, -50%);
+       
+    }
 }
 .eye_catch{
     width: 100%;

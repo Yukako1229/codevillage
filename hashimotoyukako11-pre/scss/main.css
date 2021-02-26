@@ -20,6 +20,7 @@ html {
 .title {
   color: #707070;
   font-size: 2.4rem;
+  line-height: 2.4rem;
   padding-bottom: 10px;
   position: relative;
   display: inline-block;
@@ -28,12 +29,13 @@ html {
 .title:after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 30%;
   margin-left: 20px;
   display: inline-block;
   background-color: #707070;
   width: 100px;
   height: 1px;
+  line-height: 2.4rem;
 }
 
 @media screen and (max-width: 959px) {
@@ -97,16 +99,18 @@ header {
   display: none;
 }
 
-.sp-nav ul li {
+.sp-nav m
+ul li {
   display: block;
   color: #707070;
   width: 20%;
-  margin: 10px 10px 10px auto;
+  margin: 10px 40px 10px auto;
   font-size: 1.8rem;
   line-height: 3.8rem;
 }
 
-.sp-nav ul li :hover {
+.sp-nav m
+ul li :hover {
   color: #000000;
   border-bottom: solid 1px #000000;
 }
@@ -143,6 +147,15 @@ header {
   height: 10%;
   color: white;
   z-index: 20;
+}
+
+@media screen and (max-width: 600px) {
+  .top-btn {
+    width: 30%;
+    left: 50%;
+    right: auto;
+    transform: translate(0, -50%);
+  }
 }
 
 .eye_catch {
@@ -251,14 +264,11 @@ header {
 }
 
 .concept__img__big {
+  background-image: url(../img/concept1.png);
   width: 65%;
   height: 413px;
-  overflow: hidden;
-}
-
-.concept__img__big img {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: 100% 100%;
 }
 
 @media screen and (max-width: 959px) {
@@ -269,16 +279,14 @@ header {
 }
 
 .concept__img__small {
+  background-image: url(../img/concept2.png);
   width: 35%;
   box-sizing: border-box;
   overflow: hidden;
   height: 413px;
   margin-left: 11px;
-}
-
-.concept__img__small img {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-position: 100% 0;
 }
 
 @media screen and (max-width: 959px) {
@@ -323,6 +331,7 @@ header {
   width: 50%;
   font-size: 1.6rem;
   padding-left: 57px;
+  line-height: 2.7rem;
 }
 
 @media screen and (max-width: 959px) {
@@ -381,6 +390,7 @@ header {
 .menu__content__text {
   padding: 34px 10px 52px 10px;
   font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 
 .price {
@@ -469,7 +479,7 @@ header {
 }
 
 .map__text__title {
-  color: #707070;
+  color: #A49D95;
   font-size: 2.4rem;
   font-weight: bold;
 }
@@ -508,9 +518,16 @@ hr {
   font-size: 3.2rem;
 }
 
+@media screen and (max-width: 600px) {
+  .footer__logo {
+    font-size: 18px;
+    line-height: 2.2rem;
+  }
+}
+
 .logo {
   display: flex;
-  vertical-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 959px) {
@@ -554,5 +571,26 @@ hr {
 @media screen and (max-width: 959px) {
   .re {
     margin: 0 auto 62px auto;
+  }
+}
+
+.inner-footer {
+  width: 84%;
+  padding-top: 256px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .inner-footer {
+    padding-top: 60px;
+    width: 89%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner-footer {
+    padding-bottom: 20px;
+    width: 89%;
   }
 }

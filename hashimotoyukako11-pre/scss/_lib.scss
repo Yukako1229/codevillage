@@ -47,6 +47,7 @@ html {
 .title {
     color:#707070;
     font-size: 2.4rem;
+    line-height: 2.4rem;
     padding-bottom: 10px;
     position: relative;
     display: inline-block;
@@ -55,12 +56,13 @@ html {
     &:after{
         content: "";
         position: absolute;
-        top: 50%;
+        top: 30%;
         margin-left: 20px;
         display: inline-block;
         background-color: #707070;
         width: 100px;
         height: 1px;
+        line-height: 2.4rem;
     }
 
     @include tab{

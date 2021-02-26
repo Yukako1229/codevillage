@@ -18,10 +18,14 @@ hr{
     font-family: Roboto Mono for Powerline, Regular;
     color: #A193861F;
     font-size: 3.2rem;
+    @include sp{
+        font-size: 18px;
+        line-height: 2.2rem;
+    }
 }
 .logo{
     display: flex;
-    vertical-align: center;
+    align-items: center;
 
     @include tab{
         justify-content: space-between;
@@ -59,4 +63,22 @@ hr{
         margin: 0 auto 62px auto;
 
     }
+}
+
+.inner-footer{
+    width: 84%;
+    padding-top: 256px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+
+    @include tab{
+        padding-top: 60px;
+        width: 89%;
+    }
+    @include sp{
+        padding-bottom: 20px;
+        width: 89%;
+    }
+
+
 }
